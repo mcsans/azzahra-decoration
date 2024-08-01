@@ -2,7 +2,7 @@
     <div class="header__body">
         <div class="header__top">
             <div class="header__top-column" data-da="header__menu,last,600">
-                <strong>30%</strong> <strong>off</strong> on all products enter code: joolie2020
+                <strong>30%</strong> <strong>off</strong> on all products enter code: AZZAHRA2024
             </div>
             <div class="header__top-column">
                 Call us: <a href="/vendor/joolie/tel:18004527887">+1 800 452 78 87</a>

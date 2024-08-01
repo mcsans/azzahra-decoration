@@ -37,7 +37,7 @@ class UserController extends Controller
             'email' => 'required|string|max:255|email|unique:users,email',
         ]);
 
-        $validated['password'] = Hash::make('Depublic123!');
+        $validated['password'] = Hash::make('Password123!');
 
         try {
 
@@ -48,7 +48,7 @@ class UserController extends Controller
             return redirect()->route('admin.master-data.users.index')->with('success', 'User created successfully.');
         } catch (\Exception $e) {
 
-            Log::error('Failed to create user: '.$e->getMessage());
+            Log::error('Failed to create user: ' . $e->getMessage());
 
             return redirect()->route('admin.master-data.users.index')->with('error', 'Failed to create user.');
         }
@@ -74,7 +74,7 @@ class UserController extends Controller
         $validated = $request->validate([
             'role_id' => 'required|exists:roles,id',
             'name' => 'required|string|max:255',
-            'email' => 'required|string|max:255|email|unique:users,email,'.$user->id,
+            'email' => 'required|string|max:255|email|unique:users,email,' . $user->id,
         ]);
 
         try {
@@ -86,7 +86,7 @@ class UserController extends Controller
             return redirect()->route('admin.master-data.users.index')->with('success', 'User updated successfully.');
         } catch (\Exception $e) {
 
-            Log::error('Failed to update user: '.$e->getMessage());
+            Log::error('Failed to update user: ' . $e->getMessage());
 
             return redirect()->route('admin.master-data.users.index')->with('error', 'Failed to update user.');
         }

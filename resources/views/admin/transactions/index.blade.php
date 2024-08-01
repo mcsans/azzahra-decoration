@@ -1,6 +1,6 @@
 @php use Illuminate\Support\Carbon; @endphp
 
-<x-admin.app title="Depublic - Transactions">
+<x-admin.app title="Azzahra Decoration - Transactions">
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">

@@ -1,4 +1,4 @@
-<x-admin.app title="Depublic - Dashboard">
+<x-admin.app title="Azzahra Decoration - Dashboard">
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">

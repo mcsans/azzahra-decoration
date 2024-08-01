@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{ $title ?? 'Depublic' }}</title>
+    <title>{{ $title ?? 'Azzahra Decoration' }}</title>
 
     <!-- Custom fonts for this template-->
     <link href="/vendor/sbadmin2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
