@@ -1,0 +1,186 @@
+ssh root@147.139.194.202
+172.26.114.88
+Anjay12!
+
+
+
+===ALIBABA SETTING===
+- ke halaman security groups tambahkan port 80
+- https://www.youtube.com/watch?v=8GvedyP4TKg
+
+===INSTALL SPEEDTEST (OPTIONAL)===
+- sudo apt update
+- sudo apt-get install curl
+- curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+- sudo apt-get install speedtest
+
+- run : speedtest
+
+===INSTALL & SETUP===
+- sudo apt update
+- sudo apt install php-cli php8.1-fpm php-mysql php-mbstring php-xml php-bcmath php-curl curl unzip
+
+===MYSQL===
+- sudo apt install mysql-server
+- sudo mysql
+- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+- create database db_name;
+- exit;
+
+
+===NGINX & GIT CLONE GITHUB===
+- sudo apt install nginx
+- sudo ufw app list
+- sudo ufw allow 'Nginx HTTP'
+- hostname -I
+
+- sudo apt install git
+- sudo ssh-keygen
+- sudo su
+- cat ~/.ssh/id_rsa.pub
+
+- cd /var/www
+- git clone
+- sudo chown -R $USER:$USER /var/www/azzahra-decoration
+- sudo chown -R www-data.www-data /var/www/azzahra-decoration/storage
+- sudo chown -R www-data.www-data /var/www/azzahra-decoration/bootstrap/cache
+
+- sudo nano /etc/nginx/sites-available/azzahra-decoration
+- pastekan kode dibawah ini:
+
+server {
+    listen 80;
+    server_name 147.139.194.202;
+    root /var/www/azzahra-decoration/public;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.html index.htm index.php;
+
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+
+- sudo ln -s /etc/nginx/sites-available/azzahra-decoration /etc/nginx/sites-enabled/
+- sudo nginx -t
+- sudo systemctl reload nginx
+
+===KALAU SALAH===
+#. sudo nano /etc/nginx/sites-available/azzahra-decoration
+1. sudo unlink /etc/nginx/sites-enabled/azzahra-decoration
+2. sudo ln -s /etc/nginx/sites-available/azzahra-decoration /etc/nginx/sites-enabled/
+3. sudo nginx -t
+4. sudo systemctl reload nginx
+
+===COMPOSER===
+- cd ~
+- curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+- HASH=`curl -sS https://composer.github.io/installer.sig`
+- echo $HASH
+- php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+- sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+===CHANGE VERSION PHP===
+- cd ~
+- sudo apt update
+- sudo apt install software-properties-common
+- sudo add-apt-repository ppa:ondrej/php
+
+- sudo apt update
+- sudo apt install php8.3
+- sudo apt install php8.3-cli php8.3-fpm php8.3-mysql php8.3-pgsql php8.3-mbstring php8.3-xml php8.3-curl php8.3-zip php8.3-gd php8.3-bcmath
+
+- sudo update-alternatives --set php /usr/bin/php8.3
+- sudo update-alternatives --set phar /usr/bin/phar8.3
+- sudo update-alternatives --set phar.phar /usr/bin/phar.phar8.3
+- sudo update-alternatives --set phpize /usr/bin/phpize8.3
+- sudo update-alternatives --set php-config /usr/bin/php-config8.3
+
+- sudo systemctl restart php8.3-fpm
+- sudo systemctl restart nginx
+- php -v
+
+===INSTALL NODEJS===
+- cd ~
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+- export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+- source ~/.bashrc
+- nvm install 21.7.1
+- nvm use 21.7.1
+- nvm alias default 21.7.1
+- node -v
+
+===SETUP PROJECT===
+- cd /var/www/azzahra-decoration
+- composer install
+- npm install
+- cp .env.example .env
+- php artisan key:generate
+- php artisan storage:link
+
+===Konfigurasi php 8.3 nginx===
+- sudo nano /etc/nginx/sites-available/azzahra-decoration
+- pastekan kode dibawah ini:
+
+location ~ \.php$ {
+    fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+    include fastcgi_params;
+}
+
+- sudo systemctl restart php8.3-fpm
+- sudo systemctl restart nginx
+
+===BUAT FOLDER & COPY FOLDER===
+- mkdir -p storage/app/public/img/products
+- cp -r public/img/demo storage/app/public/img/products/
+
+
+===INSTALL HTTPS===
+- sudo apt update
+- sudo apt install certbot python3-certbot-nginx
+- sudo certbot --nginx -d azzahra-decoration.my.id -d www.azzahra-decoration.my.id
+
+
+
+
+
+===COMPLETE===
+
+url : https://azzahra-decoration.my.id/
+
+login admin :
+email : admin@mail.com
+password : Password123!
+
+login customer :
+email : septinr@gmail.com
+password : Password123!
+* login customer diatas demo, bisa juga membuat customer baru dihalaman register.
+
+demo pembayaran via visa :
+card number : 4811 1111 1111 1114
+expiration date : 08/24
+cvv : 123

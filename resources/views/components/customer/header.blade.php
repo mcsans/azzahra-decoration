@@ -1,3 +1,13 @@
+@php
+    use App\Models\Cart;
+    use App\Models\CategoryProduct;
+
+    $user = auth()->user()->id ?? 0;
+
+    $countCarts = Cart::where('user_id', $user)->count();
+    $categoryProducts = CategoryProduct::orderBy('name')->get();
+@endphp
+
 <header class="header">
     <div class="header__body">
         <div class="header__top">
