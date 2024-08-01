@@ -1,0 +1,27 @@
+{
+    "[html]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+    },
+    "[php]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[blade]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.tabSize": 4
+    },
+
+    "blade.format.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "bladeFormatter.format.indentSize": 4,
+    "bladeFormatter.format.wrapAttributes": "auto",
+    "editor.stickyScroll.enabled": false,
+    "bladeFormatter.format.wrapLineLength": 1200
+}

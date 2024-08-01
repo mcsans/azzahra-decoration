@@ -1,0 +1,43 @@
+Category Product:
+- id
+- name
+
+Product:
+- id
+- picture
+- name
+- price
+- stock
+- description
+
+Cart:
+- id
+- user_id
+
+Cart Product:
+- id
+- cart_id
+- product_id
+- price
+- qty
+- total
+
+Transaction:
+- id
+- transaction_code
+- user_id
+- promotion_id
+- date
+- subtotal
+- discount
+- total
+- snap_token
+- payment_status
+
+Transaction Product:
+- id
+- transaction_id
+- product_id
+- price
+- qty
+- total
