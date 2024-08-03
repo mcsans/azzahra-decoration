@@ -15,7 +15,7 @@
                 <strong>30%</strong> <strong>off</strong> on all products enter code: AZZAHRA2024
             </div>
             <div class="header__top-column">
-                Call us: <a href="/vendor/joolie/tel:18004527887">+1 800 452 78 87</a>
+                Call us: <a href="/vendor/joolie/tel:18004527887">+62 899 452 78 87</a>
             </div>
         </div>
         <div class="header__main">
@@ -62,7 +62,7 @@
             </nav>
             <div class="header__logo logo">
                 <a href="{{ route('home') }}">
-                    <img class="img-svg" src="/vendor/joolie/img/logo/logo.svg" alt="logo">
+                    <img class="img-svg" src="/vendor/joolie/img/logo/logo.png" alt="logo">
                 </a>
             </div>
             <div class="header__action">

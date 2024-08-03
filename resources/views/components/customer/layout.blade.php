@@ -58,7 +58,7 @@
                 <div class="footer__row footer__row_1">
                     <div class="footer__logo logo">
                         <a href="{{ route('home') }}">
-                            <img class="img-svg" src="/vendor/joolie/img/logo/logo.svg" alt="logo">
+                            <img class="img-svg" src="/vendor/joolie/img/logo/logo.png" alt="logo">
                         </a>
                     </div>
                 </div>

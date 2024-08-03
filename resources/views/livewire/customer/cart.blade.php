@@ -59,7 +59,7 @@
                                                         {{ $cartProduct->product->name }}
                                                     </span>
                                                 </div>
-                                                <a href="#" class="card-selected-product__delete" wire:click.prevent="deleteCart({{ $cartProduct->id }})">
+                                                <a href="/" class="card-selected-product__delete" wire:click.prevent="deleteCart({{ $cartProduct->id }})">
                                                     <span>
                                                         <img src="/vendor/joolie/img/icons/delete-grey.svg" alt="delete icon">
                                                     </span>

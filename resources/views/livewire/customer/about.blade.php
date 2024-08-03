@@ -15,7 +15,7 @@
             </h1>
             <nav class="breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb__list">
-                    <li class="breadcrumb__item"><a href="#">Home</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Home</a></li>
                     <li class="breadcrumb__item active" aria-current="page">About</li>
                 </ol>
             </nav>
@@ -26,54 +26,72 @@
     <!-- == TEXT BLOCK ABOUT ================== -->
     <section class="about__text-block text-block-about">
         <div class="text-block-about__body container">
-            <div class="text-block-about__column text-block-about__column_1 text-content">
+            <div class="text-block-about__column  text-content">
                 <div class="text-block-about__head head">
                     <div class="head__suptitle suptitle">
                         <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon"></span>
                         find your beauty
                     </div>
                     <h3 class="head__title title-3">
-                        Joolie - store of festive products!
+                        Azzahra Decoration
                     </h3>
                     <div class="head__subtitle">Only the best for organizing wedding ceremonies at the best price!</div>
-                    <div class="head__text text">You can buy everything you need for a birthday, wedding, corporate event or party! We offer the largest assortment of candles for a cake, party dishes, balloons. Prices from the manufacturer and discounts, the availability of goods in a warehouse in sufficient volume and prompt dispatch of orders to anywhere in the world are guaranteed!</div>
+                    <div class="head__text text">Selamat datang di Azzahra Decoration! Kami adalah penyedia layanan dekorasi dan aksesoris pernikahan yang berdedikasi untuk membuat hari istimewa Anda menjadi momen yang tak terlupakan. Dengan berbagai pilihan gaun, dekorasi, dan aksesoris pernikahan, kami siap membantu Anda menciptakan pernikahan impian Anda.</div>
+
+                    <div class="head__subtitle" style="margin-top: 3rem;">Visi Kami</div>
+                    <div class="head__text text">Di Azzahra Decoration, visi kami adalah menjadi pemimpin dalam industri dekorasi pernikahan dengan menyediakan produk dan layanan terbaik yang memenuhi kebutuhan dan keinginan setiap pasangan.</div>
+
+                    <div class="head__subtitle" style="margin-top: 3rem;">Misi Kami</div>
+                    <div class="head__text text">
+                        <ul>
+                            <li>
+                                Kualitas Terbaik: Menyediakan produk dengan kualitas terbaik yang memenuhi standar tinggi dan memastikan kepuasan pelanggan.
+                            </li>
+                            <li>
+                                Inovasi: Selalu berinovasi dalam desain dan layanan kami untuk mengikuti tren terkini dalam dunia pernikahan.
+                            </li>
+                            <li>
+                                Pelayanan Prima: Memberikan layanan pelanggan yang ramah dan profesional, memastikan setiap detail dari pernikahan Anda ditangani dengan sempurna.
+                            </li>
+                            <li>
+                                Keberlanjutan: Mendukung praktik bisnis yang berkelanjutan dan ramah lingkungan dalam setiap aspek operasi kami.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="head__subtitle" style="margin-top: 3rem;">Layanan Kami</div>
+                    <div class="head__text text">
+                        <ul>
+                            <li>
+                                Gaun Pernikahan: Koleksi gaun pernikahan yang elegan dan berkelas untuk membuat Anda tampil memukau di hari istimewa Anda.
+                            </li>
+                            <li>
+                                Aksesoris Pernikahan: Berbagai aksesoris pernikahan seperti veil, sepatu, dan perhiasan untuk melengkapi penampilan Anda.
+                            </li>
+                            <li>
+                                Dekorasi Pernikahan: Layanan dekorasi lengkap untuk lokasi pernikahan Anda, mulai dari bunga, pencahayaan, hingga meja resepsi.
+                            </li>
+                            <li>
+                                Paket Pernikahan: Paket pernikahan yang disesuaikan dengan kebutuhan dan anggaran Anda, termasuk perencanaan, koordinasi, dan eksekusi acara.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="head__subtitle" style="margin-top: 3rem;">Mengapa Memilih Kami?</div>
+                    <div class="head__text text">
+                        <ul>
+                            <li>
+                                Pengalaman: Dengan pengalaman bertahun-tahun dalam industri pernikahan, kami memahami apa yang dibutuhkan untuk membuat pernikahan Anda sempurna.
+                            </li>
+                            <li>
+                                Desain Unik: Setiap detail dari dekorasi dan aksesoris kami dirancang dengan keunikan dan keindahan, sesuai dengan tema dan gaya pernikahan Anda.
+                            </li>
+                            <li>
+                                Harga Terjangkau: Kami menawarkan produk dan layanan dengan harga yang kompetitif tanpa mengorbankan kualitas.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        Sint velit ut voluptate qui sunt cupidatat ipsum sint aliqua dolore laboris. Ex non nostrud ullamco et tempor.
-                    </li>
-                    <li>
-                        Ex non nostrud ullamco et tempor cillum laborum aliqua ea laboris labore. Sint velit ut voluptate qui sunt cupidatat ipsum sint aliqua dolore laboris.
-                    </li>
-                    <li>
-                        Unt cupidatat ipsum sint aliqua dolore laboris. Ex non nostrud ullamco et tempor cillum laborum aliqua ea laboris labore.
-                    </li>
-                    <li>
-                        Ex non nostrud ullamco et tempor cillum laborum aliqua ea laboris labore.
-                    </li>
-                </ul>
-            </div>
-            <div class="text-block-about__column text-block-about__column_2">
-                <ul class="text-block-about__advantages advantages-about">
-                    <li>
-                        <div class="advantages-about__count">
-                            4,583 <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon"></span>
-                        </div>
-                        <div class="advantages-about__label">Trendy Poducts</div>
-                    </li>
-                    <li>
-                        <div class="advantages-about__count">
-                            289
-                        </div>
-                        <div class="advantages-about__label">Satisfied Clients</div>
-                    </li>
-                    <li>
-                        <div class="advantages-about__count">
-                            15+ <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon"></span>
-                        </div>
-                        <div class="advantages-about__label">Years of Experience</div>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
@@ -141,7 +159,7 @@
                     </h3>
                     <div class="head__text text">More actions and bonuses you can find in our Instagram.</div>
                 </div>
-                <a href="#" class="instagram-block__link">
+                <a href="https://www.instagram.com/sintiasitisabila_" class="instagram-block__link">
                     follow us <span><img class="img-svg" src="/vendor/joolie/img/icons/Arrow-right.svg" alt="arrow"></span>
                 </a>
             </div>
@@ -149,24 +167,24 @@
         <div class="instagram-block__column_2">
             <ul class="instagram-block__img-list">
                 <li>
-                    <a href="#" class="instagram-block__img ibg">
+                    <div class="instagram-block__img ibg">
                         <img class="lazy" data-src="/vendor/joolie/img/instagram-block/01.jpg" src="/vendor/joolie/img/instagram-block/placeholder.jpg" alt="img">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="instagram-block__img ibg">
+                    <div class="instagram-block__img ibg">
                         <img class="lazy" data-src="/vendor/joolie/img/instagram-block/02.jpg" src="/vendor/joolie/img/instagram-block/placeholder.jpg" alt="img">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="instagram-block__img ibg">
+                    <div class="instagram-block__img ibg">
                         <img class="lazy" data-src="/vendor/joolie/img/instagram-block/03.jpg" src="/vendor/joolie/img/instagram-block/placeholder.jpg" alt="img">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="instagram-block__img ibg">
+                    <div class="instagram-block__img ibg">
                         <img class="lazy" data-src="/vendor/joolie/img/instagram-block/04.jpg" src="/vendor/joolie/img/instagram-block/placeholder.jpg" alt="img">
-                    </a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -178,29 +196,29 @@
         <div class="container">
             <ul class="logos-block__list">
                 <li>
-                    <a class="logos-block__item" href="#">
+                    <div class="logos-block__item">
                         <img src="/vendor/joolie/img/logo/logo1.svg" alt="logo">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a class="logos-block__item" href="#">
+                    <div class="logos-block__item">
                         <img src="/vendor/joolie/img/logo/logo2.svg" alt="logo">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a class="logos-block__item" href="#">
+                    <div class="logos-block__item">
                         <img src="/vendor/joolie/img/logo/logo3.svg" alt="logo">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a class="logos-block__item" href="#">
+                    <div class="logos-block__item">
                         <img src="/vendor/joolie/img/logo/logo4.svg" alt="logo">
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a class="logos-block__item" href="#">
+                    <div class="logos-block__item">
                         <img src="/vendor/joolie/img/logo/logo5.svg" alt="logo">
-                    </a>
+                    </div>
                 </li>
             </ul>
         </div>

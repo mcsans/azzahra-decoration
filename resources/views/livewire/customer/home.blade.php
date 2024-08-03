@@ -175,7 +175,7 @@
                                 <div class="card__bottom">
                                     <div class="card__title text">{{ $product->name }}</div>
                                     <span class="card__price">Rp. {{ number_format($product->price, 0, ',', '.') }},-</span>
-                                    <a href="#" class="card__like">
+                                    <a href="https://api.whatsapp.com/send?text={{ urlencode(route('customer.product-detail', $product->id)) }}" target="_blank" class="card__like">
                                         <img class="img-svg" src="/vendor/joolie/img/icons/icon-send.svg" alt="icon">
                                     </a>
                                 </div>
@@ -201,7 +201,7 @@
                                         <div class="card__bottom">
                                             <div class="card__title text">{{ $product->name }}</div>
                                             <span class="card__price">Rp. {{ number_format($product->price, 0, ',', '.') }},-</span>
-                                            <a href="#" class="card__like">
+                                            <a href="https://api.whatsapp.com/send?text={{ urlencode(route('customer.product-detail', $product->id)) }}" target="_blank" class="card__like">
                                                 <img class="img-svg" src="/vendor/joolie/img/icons/icon-send.svg" alt="icon">
                                             </a>
                                         </div>
@@ -282,7 +282,7 @@
                     </h3>
                     <div class="head__text text">More actions and bonuses you can find in our Instagram.</div>
                 </div>
-                <a href="#" class="instagram-block__link">
+                <a href="https://www.instagram.com/sintiasitisabila_" class="instagram-block__link">
                     follow us <span><img class="img-svg" src="/vendor/joolie/img/icons/Arrow-right.svg" alt="arrow"></span>
                 </a>
             </div>
