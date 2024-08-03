@@ -282,7 +282,7 @@
                     </h3>
                     <div class="head__text text">More actions and bonuses you can find in our Instagram.</div>
                 </div>
-                <a href="https://www.instagram.com/sintiasitisabila_" class="instagram-block__link">
+                <a href="https://www.instagram.com/decorazzahra?igsh=N2tqc3Z6OHk1Mmhq" target="_blank" class="instagram-block__link">
                     follow us <span><img class="img-svg" src="/vendor/joolie/img/icons/Arrow-right.svg" alt="arrow"></span>
                 </a>
             </div>

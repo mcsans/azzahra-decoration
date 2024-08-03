@@ -15,7 +15,7 @@
                 <strong>30%</strong> <strong>off</strong> on all products enter code: AZZAHRA2024
             </div>
             <div class="header__top-column">
-                Call us: <a href="/vendor/joolie/tel:18004527887">+62 899 452 78 87</a>
+                Call us: <a href="https://wa.me/6285872349812" target="_blank">+62 858 723 498 12</a>
             </div>
         </div>
         <div class="header__main">
