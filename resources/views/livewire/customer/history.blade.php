@@ -13,12 +13,12 @@
         </div>
         <div class="hero__body container">
             <h1 class="hero__title title-2">
-                History
+                Riwayat Pesanan
             </h1>
             <nav class="breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb__list">
                     <li class="breadcrumb__item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb__item active" aria-current="page">History</li>
+                    <li class="breadcrumb__item active" aria-current="page">Riwayat Pesanan</li>
                 </ol>
             </nav>
         </div>
@@ -35,7 +35,7 @@
                     <div class="profile-info">
                         <ul class="profile-info__nav">
                             <li>
-                                <a href="#tab-2" class="profile-info__link profile-info__triggers active">my orders</a>
+                                <a href="#tab-2" class="profile-info__link profile-info__triggers active">pesanan saya</a>
                             </li>
                         </ul>
                         <div id="tab-2" class="profile-info__tabs-content active">
@@ -49,7 +49,7 @@
                                                 <span>
                                                     <img src="/vendor/joolie/img/icons/check-square.svg" alt="truck">
                                                 </span>
-                                                Success
+                                                Berhasil
                                             </div>
                                             <div class="order-list__plus"></div>
                                         </div>
@@ -59,13 +59,13 @@
                                                     <div class="card-order__list-left"><strong>Email : </strong><span>{{ $transaction->contact_email }}</span></div>
                                                 </li>
                                                 <li>
-                                                    <div class="card-order__list-left"><strong>Phone : </strong><span>{{ $transaction->contact_phone }}</span></div>
+                                                    <div class="card-order__list-left"><strong>Telepon : </strong><span>{{ $transaction->contact_phone }}</span></div>
                                                 </li>
                                                 <li>
-                                                    <div class="card-order__list-left"><strong>Delivering to : </strong><span>{{ $transaction->delivery_address }}</span></div>
+                                                    <div class="card-order__list-left"><strong>Pengiriman ke : </strong><span>{{ $transaction->delivery_address }}</span></div>
                                                 </li>
                                                 <li class="total">
-                                                    <div class="card-order__list-left">Products :</div>
+                                                    <div class="card-order__list-left">Produk :</div>
                                                 </li>
                                                 @foreach ($transaction->transactionProducts as $transactionProduct)
                                                     <li>
@@ -78,7 +78,7 @@
                                                     <div class="card-order__list-right">Rp. {{ number_format($transaction->subtotal, 0, ',', '.') }},-</div>
                                                 </li>
                                                 <li class="total">
-                                                    <div class="card-order__list-left">Discount</div>
+                                                    <div class="card-order__list-left">Diskon</div>
                                                     <div class="card-order__list-right">Rp. {{ number_format($transaction->discount, 0, ',', '.') }},-</div>
                                                 </li>
                                                 <li class="total">

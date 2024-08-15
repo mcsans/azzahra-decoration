@@ -36,7 +36,7 @@ class Cart extends Component
             $cartProduct->quantity = $this->cartQuantities[$id];
             $cartProduct->save();
         } else {
-            $this->dispatch('sweetalert', icon: 'info', title: 'Maximum stock reached.');
+            $this->dispatch('sweetalert', icon: 'info', title: 'Stok Maksimum Terpenuhi.');
             $this->mount();
         }
     }
@@ -62,7 +62,7 @@ class Cart extends Component
             $cartProduct->quantity = $this->cartQuantities[$id];
             $cartProduct->save();
         } else {
-            $this->dispatch('sweetalert', icon: 'info', title: 'Maximum stock reached.');
+            $this->dispatch('sweetalert', icon: 'info', title: 'Stok Maksimum Terpenuhi.');
             $this->mount();
         }
     }

@@ -11,12 +11,12 @@
         </div>
         <div class="hero__body container">
             <h1 class="hero__title title-2">
-                Shop
+                Toko
             </h1>
             <nav class="breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb__list">
-                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb__item active" aria-current="page">Shop</li>
+                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Beranda</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Toko</li>
                 </ol>
             </nav>
         </div>
@@ -32,7 +32,7 @@
             <div class="shop__head head-shop">
                 <div class="head-shop__column_1">
                     <div class="form-search form-search_open">
-                        <input id="search-2" type="text" class="form-search__input" placeholder="Search" wire:model="keyword" wire:keyup.debounce.200ms="reloadProducts">
+                        <input id="search-2" type="text" class="form-search__input" placeholder="Cari" wire:model="keyword" wire:keyup.debounce.200ms="reloadProducts">
                         <label for="search-2" class="form-search__label">
                             <span>
                                 <img src="/vendor/joolie/img/icons/search.svg" alt="search">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="head-shop__column_2">
                     <div class="head-shop__product-quantity">
-                        There are <strong>{{ number_format(count($products), 0, ',', '.') }} products.</strong>
+                        Menampikan <strong>{{ number_format(count($products), 0, ',', '.') }} produk.</strong>
                     </div>
                 </div>
                 <div class="head-shop__mobile-btn">
@@ -64,7 +64,7 @@
                         </span>
                     </div>
                     <div class="shop-aside__categories categories-list">
-                        <h4 class="shop-aside__title">Categories</h4>
+                        <h4 class="shop-aside__title">Kategori</h4>
                         <ul>
                             <li>
                                 <a href="/" wire:click.prevent="updateCategoryProductID(null)" @if ($categoryProductID == null) style="color: pink" @endif>All

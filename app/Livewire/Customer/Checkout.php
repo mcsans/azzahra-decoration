@@ -112,7 +112,7 @@ class Checkout extends Component
 
             Log::error('Failed to create transaction: ' . $e->getMessage());
 
-            $this->dispatch('sweetalert', icon: 'error', title: 'An error has occurred.', text: 'Please contact the developer.');
+            $this->dispatch('sweetalert', icon: 'error', title: 'Terjadi kesalahan.', text: 'Silakan hubungi pengembang.');
         }
     }
 

@@ -18,22 +18,22 @@ class CategoryProductSeeder extends Seeder
 
         $categoryProducts = [
             [
-                'name' => 'Accessories',
+                'name' => 'Aksesoris',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
             [
-                'name' => 'Wedding Dresses',
+                'name' => 'Gaun Pernikahan',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
             [
-                'name' => 'Decorations',
+                'name' => 'Dekorasi',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
             [
-                'name' => 'Wedding Suits',
+                'name' => 'Jas Pernikahan',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],

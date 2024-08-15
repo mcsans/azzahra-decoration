@@ -11,13 +11,13 @@
         </div>
         <div class="hero__body container">
             <h1 class="hero__title title-2">
-                Cart
+                Keranjang Belanja
             </h1>
             <nav class="breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb__list">
-                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb__item"><a href="{{ route('customer.shop') }}">Shop</a></li>
-                    <li class="breadcrumb__item active" aria-current="page">Cart</li>
+                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Beranda</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('customer.shop') }}">Toko</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Keranjang Belanja</li>
                 </ol>
             </nav>
         </div>
@@ -31,8 +31,8 @@
                 <div class="column-1">
                     <div class="selected-products">
                         <div class="selected-products__head">
-                            <div class="selected-products__head-col-1">Product</div>
-                            <div class="selected-products__head-col-2">Quantity</div>
+                            <div class="selected-products__head-col-1">Produk</div>
+                            <div class="selected-products__head-col-2">Jumlah</div>
                             <div class="selected-products__head-col-3">Subtotal</div>
                         </div>
                         <ul class="selected-products__list">
@@ -87,10 +87,10 @@
                 </div>
                 <div class="column-2">
                     <div class="order-info">
-                        <h4 class="order-info__title">your order</h4>
+                        <h4 class="order-info__title">Pesanan Anda</h4>
                         <ul class="order-info__list">
                             <li>
-                                <div class="order-info__list-left">Оrder price</div>
+                                <div class="order-info__list-left">Total pesanan</div>
                                 <div class="order-info__list-right"><strong>Rp. {{ number_format($total, 0, ',', '.') }},-</strong></div>
                             </li>
                             <li class="total"></li>

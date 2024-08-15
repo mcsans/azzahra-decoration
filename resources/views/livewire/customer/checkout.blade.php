@@ -15,9 +15,9 @@
             </h1>
             <nav class="breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb__list">
-                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb__item"><a href="{{ route('customer.shop') }}">Shop</a></li>
-                    <li class="breadcrumb__item"><a href="{{ route('customer.cart') }}">Cart</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Beranda</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('customer.shop') }}">Toko</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('customer.cart') }}">Keranjang Belanja</a></li>
                     <li class="breadcrumb__item active" aria-current="page">Checkout</li>
                 </ol>
             </nav>
@@ -36,7 +36,7 @@
                         <img src="/vendor/joolie/img/steps-block/01.svg" alt="icon">
                     </div>
                     <div class="steps-block__text">
-                        delivery details
+                        rincian pengiriman
                     </div>
                     <div class="steps-block__decor">
                         <img src="/vendor/joolie/img/icons/object-right.svg" alt="line">
@@ -47,7 +47,7 @@
                         <img src="/vendor/joolie/img/steps-block/02.svg" alt="icon">
                     </div>
                     <div class="steps-block__text">
-                        Payment method
+                        metode pembayaran
                     </div>
                     <div class="steps-block__decor">
                         <img src="/vendor/joolie/img/icons/object-right.svg" alt="line">
@@ -58,7 +58,7 @@
                         <img src="/vendor/joolie/img/steps-block/03.svg" alt="icon">
                     </div>
                     <div class="steps-block__text">
-                        Final step
+                        langkah akhir
                     </div>
                     <div class="steps-block__decor">
                         <img src="/vendor/joolie/img/icons/object-right.svg" alt="line">
@@ -67,52 +67,52 @@
             </ul>
             <a href="{{ route('customer.cart') }}" class="checkout__link-back btn-prev">
                 <span><img src="/vendor/joolie/img/icons/Arrow-left.svg" alt="arrow"></span>
-                back
+                kembali
             </a>
             <div class="block-column-2">
                 <div class="column-1">
                     <div class="delivery-details">
-                        <h6 class="delivery-details__title title-6">contact person </h6>
+                        <h6 class="delivery-details__title title-6">kontak personal </h6>
                         <div class="delivery-details__row delivery-details__row_1">
                             <div class="delivery-details__input">
-                                <input type="text" class="input" placeholder="Enter your name" wire:model="contact_first_name" required>
+                                <input type="text" class="input" placeholder="Masukkan nama depan Anda" wire:model="contact_first_name" required>
                             </div>
                             <div class="delivery-details__input">
-                                <input type="text" class="input" placeholder="Enter your last name " wire:model="contact_last_name" required>
+                                <input type="text" class="input" placeholder="Masukkan nama belakang Anda " wire:model="contact_last_name" required>
                             </div>
                             <div class="delivery-details__input">
-                                <input type="email" class="input" placeholder="Enter your email" wire:model="contact_email" required>
+                                <input type="email" class="input" placeholder="Masukkan email Anda" wire:model="contact_email" required>
                             </div>
                             <div class="delivery-details__input">
-                                <input type="number" class="input" placeholder="Enter your phone" wire:model="contact_phone" required>
+                                <input type="number" class="input" placeholder="Masukkan nomor telepon Anda" wire:model="contact_phone" required>
                             </div>
                         </div>
-                        <h6 class="delivery-details__title title-6">delivery address</h6>
+                        <h6 class="delivery-details__title title-6">alamat pengiriman</h6>
                         <div class="delivery-details__row delivery-details__row_2">
                             <div class="delivery-details__input delivery-details__input_address">
-                                <input type="text" class="input" placeholder="Enter your Аddress" wire:model="delivery_address" required>
+                                <input type="text" class="input" placeholder="Masukkan alamat Anda" wire:model="delivery_address" required>
                             </div>
                         </div>
-                        <h6 class="delivery-details__title title-6">delivery date</h6>
+                        <h6 class="delivery-details__title title-6">tanggal pengiriman</h6>
                         <div class="delivery-details__row delivery-details__row_2">
                             <div class="delivery-details__input delivery-details__input_date">
-                                <input type="date" class="input" placeholder="Delivery date" wire:model="delivery_date" required>
+                                <input type="date" class="input" placeholder="Tanggal pengiriman" wire:model="delivery_date" required>
                             </div>
                             <div class="delivery-details__input delivery-details__input_time">
-                                <input type="text" class="input _mask" placeholder="Delivery time" data-mask="99:99" wire:model="delivery_time" required>
+                                <input type="text" class="input _mask" placeholder="Waktu pengiriman" data-mask="99:99" wire:model="delivery_time" required>
                             </div>
                         </div>
-                        <h6 class="delivery-details__title title-6">promotion code </h6>
+                        <h6 class="delivery-details__title title-6">kode promo </h6>
                         <div class="delivery-details__row delivery-details__row_1">
                             <div class="delivery-details__input">
-                                <input type="text" class="input" placeholder="Enter Code" wire:model="promotion_code" wire:keyup.debounce.200ms="triggerPromotion">
+                                <input type="text" class="input" placeholder="Masukkan kode" wire:model="promotion_code" wire:keyup.debounce.200ms="triggerPromotion">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column-2">
                     <div class="order-info">
-                        <h4 class="order-info__title">your order</h4>
+                        <h4 class="order-info__title">Pesanan Anda</h4>
                         <ul class="order-info__product-list">
                             @foreach ($cartProducts as $cartProduct)
                                 <li>
@@ -134,11 +134,11 @@
                         </ul>
                         <ul class="order-info__list">
                             <li>
-                                <div class="order-info__list-left">Оrder price</div>
+                                <div class="order-info__list-left">Subtotal</div>
                                 <div class="order-info__list-right"><strong>Rp. {{ number_format($subtotal, 0, ',', '.') }},-</strong></div>
                             </li>
                             <li>
-                                <div class="order-info__list-left">Discount</div>
+                                <div class="order-info__list-left">Diskon</div>
                                 <div class="order-info__list-right"><strong>Rp. {{ number_format($discount, 0, ',', '.') }},-</strong></div>
                             </li>
                             <li class="total">
@@ -147,7 +147,7 @@
                             </li>
                         </ul>
                         <button class="btn-submit" type="save">
-                            choose a payment method
+                            pilih metode pembayaran
                         </button>
                     </div>
                 </div>

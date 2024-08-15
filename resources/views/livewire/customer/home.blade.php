@@ -23,17 +23,17 @@
                         <div class="promo-slider__inner">
                             <div class="promo-slider__suptitle suptitle">
                                 <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="circles"></span>
-                                get your chance
+                                dapatkan kesempatanmu
                             </div>
                             <h1 class="promo-slider__title title-1">
-                                be charming <br>
-                                more than ever
+                                tampil mempesona <br>
+                                lebih dari sebelumnya
                             </h1>
                             <div class="promo-slider__subtitle">
-                                <strong>50% off</strong> on every product here.
+                                <strong>Diskon 30%</strong> untuk setiap produk di sini.
                             </div>
                             <a href="{{ route('customer.shop') }}" class="btn-default">
-                                Shop now
+                                Belanja sekarang
                             </a>
                         </div>
                     </div>
@@ -44,37 +44,7 @@
     <!-- == // PROMO SLIDER ================== -->
 
     <!-- == LOGOS BLOCK ================== -->
-    <div class="logos-block">
-        <div class="container">
-            <ul class="logos-block__list">
-                <li>
-                    <div class="logos-block__item">
-                        <img src="/vendor/joolie/img/logo/logo1.svg" alt="logo">
-                    </div>
-                </li>
-                <li>
-                    <div class="logos-block__item">
-                        <img src="/vendor/joolie/img/logo/logo2.svg" alt="logo">
-                    </div>
-                </li>
-                <li>
-                    <div class="logos-block__item">
-                        <img src="/vendor/joolie/img/logo/logo3.svg" alt="logo">
-                    </div>
-                </li>
-                <li>
-                    <div class="logos-block__item">
-                        <img src="/vendor/joolie/img/logo/logo4.svg" alt="logo">
-                    </div>
-                </li>
-                <li>
-                    <div class="logos-block__item">
-                        <img src="/vendor/joolie/img/logo/logo5.svg" alt="logo">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <x-customer.section-logos />
     <!-- == // LOGOS BLOCK ================== -->
 
     <!-- == PRODUCTS CATEGORY ================== -->
@@ -82,14 +52,14 @@
         <div class="container">
             <div class="products-category__head head">
                 <div class="head__suptitle suptitle">
-                    get your
+                    dapatkan
                     <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon"></span>
-                    chance
+                    kesempatanmu
                 </div>
                 <h3 class="head__title title-3">
-                    Explore our collections
+                    Jelajahi koleksi kami
                 </h3>
-                <div class="head__text text">Discover our top categories: Accessories, Wedding Dresses, Decorations, and Wedding Suits.</div>
+                <div class="head__text text">Temukan kategori terbaik kami: Aksesoris, Gaun Pernikahan, Dekorasi, dan Jas Pernikahan.</div>
             </div>
         </div>
         <div class="products-category__list swiper-container" data-mobile="false">
@@ -117,7 +87,7 @@
                                         <img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon">
                                     </div>
                                     <h5 class="category-card__title">{{ $categoryProduct->name }}</h5>
-                                    <span class="btn-default">View Products</span>
+                                    <span class="btn-default">Lihat Produk</span>
                                 </div>
                             </div>
                         </a>
@@ -140,12 +110,12 @@
         <div class="container">
             <div class="popular-products__head head">
                 <div class="head__suptitle suptitle">
-                    look
+                    lihat
                     <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon"></span>
-                    here
+                    di sini
                 </div>
                 <h3 class="head__title title-3">
-                    Popular products
+                    Produk Populer
                 </h3>
             </div>
             <ul class="popular-products__nav">
@@ -212,7 +182,7 @@
                     </div>
                 @endif
             @endforeach
-            <a href="{{ route('customer.shop') }}" class="btn-default">view all products</a>
+            <a href="{{ route('customer.shop') }}" class="btn-default">lihat semua produk</a>
         </div>
     </section>
     <!-- == // POPULARS PRODUCTS ================== -->
@@ -221,96 +191,10 @@
     <!-- == // TEXT VIDEO BLOCK ================== -->
 
     <!-- == ADVANTAGES ================== -->
-    <section class="advantages">
-        <div class="container">
-            <ul class="advantages__list">
-                <li>
-                    <div class="advantages__item">
-                        <div class="advantages__icon">
-                            <img src="/vendor/joolie/img/advantages/icon-dress.svg" alt="icon">
-                        </div>
-                        <h5 class="advantages__title title-5">wide selection</h5>
-                        <div class="advantages__text text">А huge number of products for your celebration day.</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="advantages__item">
-                        <div class="advantages__icon">
-                            <img src="/vendor/joolie/img/advantages/icon-delivery.svg" alt="icon">
-                        </div>
-                        <h5 class="advantages__title title-5">fast Delivery</h5>
-                        <div class="advantages__text text">We deliver the next day after the order, as you wish.</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="advantages__item">
-                        <div class="advantages__icon">
-                            <img src="/vendor/joolie/img/advantages/icon-girl.svg" alt="icon">
-                        </div>
-                        <h5 class="advantages__title title-5">individual approach</h5>
-                        <div class="advantages__text text">We discuss all the little things you need and want.</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="advantages__item">
-                        <div class="advantages__icon">
-                            <img src="/vendor/joolie/img/advantages/icon-idea.svg" alt="icon">
-                        </div>
-                        <h5 class="advantages__title title-5">Creative ideas</h5>
-                        <div class="advantages__text text">Our designers are full of new creative ideas for you.</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <x-customer.section-advantages />
     <!-- == // ADVANTAGES ================== -->
 
     <!-- == INSTAGRAM BLOCK ================== -->
-    <section class="instagram-block _parallax">
-        <div class="instagram-block__decor layer" data-depth="0.15">
-            <img src="/vendor/joolie/img/photo/decor2.png" alt="flowers">
-        </div>
-        <div class="instagram-block__column_1">
-            <div class="instagram-block__text-wrap">
-                <div class="instagram-block__head head">
-                    <div class="head__suptitle suptitle">
-                        <span><img src="/vendor/joolie/img/icons/icon-circles.svg" alt="icon"></span>
-                        <span class="left">our</span> instagram
-                    </div>
-                    <h3 class="head__title title-3">
-                        be closer
-                    </h3>
-                    <div class="head__text text">More actions and bonuses you can find in our Instagram.</div>
-                </div>
-                <a href="https://www.instagram.com/decorazzahra?igsh=N2tqc3Z6OHk1Mmhq" target="_blank" class="instagram-block__link">
-                    follow us <span><img class="img-svg" src="/vendor/joolie/img/icons/Arrow-right.svg" alt="arrow"></span>
-                </a>
-            </div>
-        </div>
-        <div class="instagram-block__column_2">
-            <ul class="instagram-block__img-list">
-                <li>
-                    <span class="instagram-block__img ibg">
-                        <img src="/vendor/joolie/img/instagram-block/01.jpg" alt="img">
-                    </span>
-                </li>
-                <li>
-                    <span class="instagram-block__img ibg">
-                        <img src="/vendor/joolie/img/instagram-block/02.jpg" alt="img">
-                    </span>
-                </li>
-                <li>
-                    <span class="instagram-block__img ibg">
-                        <img src="/vendor/joolie/img/instagram-block/03.jpg" alt="img">
-                    </span>
-                </li>
-                <li>
-                    <span class="instagram-block__img ibg">
-                        <img src="/vendor/joolie/img/instagram-block/04.jpg" alt="img">
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <x-customer.section-instagram />
     <!-- == // INSTAGRAM BLOCK ================== -->
 </div>

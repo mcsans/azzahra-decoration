@@ -12,10 +12,10 @@
     <div class="header__body">
         <div class="header__top">
             <div class="header__top-column" data-da="header__menu,last,600">
-                <strong>30%</strong> <strong>off</strong> on all products enter code: AZZAHRA2024
+                <strong>Diskon 30%</strong> untuk semua produk, masukkan kode: AZZAHRA2024
             </div>
             <div class="header__top-column">
-                Call us: <a href="https://wa.me/6285872349812" target="_blank">+62 858 723 498 12</a>
+                Hubungi kami: <a href="https://wa.me/6285872349812" target="_blank">+62 858 723 498 12</a>
             </div>
         </div>
         <div class="header__main">
@@ -33,7 +33,7 @@
                 <ul class="header__menu-list">
                     <li>
                         <span class="header__menu-link" style="cursor: pointer">
-                            Categories
+                            Ketegori
                         </span>
                         <ul class="header__menu-sublist">
                             @foreach ($categoryProducts as $categoryProduct)
@@ -45,17 +45,17 @@
                     </li>
                     <li>
                         <a href="{{ route('home') }}" class="header__menu-link">
-                            Home
+                            Beranda
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('customer.about') }}" class="header__menu-link">
-                            About Us
+                            Tentang Kami
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('customer.shop') }}" class="header__menu-link">
-                            Shop
+                            Toko
                         </a>
                     </li>
                 </ul>

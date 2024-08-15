@@ -11,12 +11,12 @@
         </div>
         <div class="hero__body container">
             <h1 class="hero__title title-2">
-                Shop
+                Detail Produk
             </h1>
             <nav class="breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb__list">
-                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb__item"><a href="{{ route('customer.shop') }}">Shop</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('home') }}">Beranda</a></li>
+                    <li class="breadcrumb__item"><a href="{{ route('customer.shop') }}">Toko</a></li>
                     <li class="breadcrumb__item active" aria-current="page">{{ $product->name }}</li>
                 </ol>
             </nav>
@@ -55,9 +55,9 @@
                         </div>
                     </div>
                     <div class="top-product-page__row-3 text">
-                        Product Category : <a class="color-pink" href="{{ route('customer.shop-category', $product->categoryProduct->id) }}">{{ $product->categoryProduct->name }}</a>
+                        Kategori Produk : <a class="color-pink" href="{{ route('customer.shop-category', $product->categoryProduct->id) }}">{{ $product->categoryProduct->name }}</a>
                         <br>
-                        Product Stock : {{ number_format($product->stock, 0, ',', '.') }}
+                        Stok Produk : {{ number_format($product->stock, 0, ',', '.') }}
                     </div>
                     <form class="mt-4" wire:submit.prevent="save">
                         <div class="top-product-page__row-4">
@@ -71,9 +71,9 @@
                         </div>
                         <div class="top-product-page__row-5">
                             @if ($productAlreadyInCart)
-                                <button type="button" class="top-product-page__btn-add-to-card">already in cart</button>
+                                <button type="button" class="top-product-page__btn-add-to-card">Sudah di Keranjang</button>
                             @else
-                                <button type="submit" class="top-product-page__btn-add-to-card">add to cart</button>
+                                <button type="submit" class="top-product-page__btn-add-to-card">Tambah ke Keranjang</button>
                             @endif
                         </div>
                     </form>
@@ -81,7 +81,7 @@
             </div>
             <div class="product-page__description description-produc-page">
                 <div class="text-content">
-                    <h5>Description</h5>
+                    <h5>Deskripsi</h5>
                     <p>{!! $product->description !!}</p>
                 </div>
             </div>

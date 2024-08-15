@@ -68,15 +68,15 @@ class ProductDetail extends Component
                     ]);
                 });
 
-                $this->dispatch('sweetalert', icon: 'success', title: 'Add to Cart Successfully');
+                $this->dispatch('sweetalert', icon: 'success', title: 'Berhasil Ditambahkan ke Keranjang');
                 return redirect()->route('customer.cart');
             } catch (\Exception $e) {
 
                 Log::error('Failed add to cart: ' . $e->getMessage());
-                $this->dispatch('sweetalert', icon: 'error', title: 'An error has occurred.', text: 'Please contact the developer.');
+                $this->dispatch('sweetalert', icon: 'error', title: 'Terjadi Kesalahan.', text: 'Silakan hubungi pengembang.');
             }
         } else {
-            $this->dispatch('sweetalert', icon: 'info', title: 'Maximum stock reached.');
+            $this->dispatch('sweetalert', icon: 'info', title: 'Stok Maksimum Terpenuhi.');
         }
     }
 }
