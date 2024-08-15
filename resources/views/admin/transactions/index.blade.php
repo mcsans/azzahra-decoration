@@ -4,7 +4,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Transactions</h1>
+        <h1 class="h3 mb-0 text-gray-800">Transaksi</h1>
     </div>
 
     {{-- Alert --}}
@@ -15,14 +15,14 @@
         <thead>
             <tr>
                 <th width="1%">No</th>
-                <th>Transaction Code</th>
+                <th>Kode Transaksi</th>
                 <th>User</th>
                 <th>Subtotal</th>
-                <th>Discount</th>
+                <th>Diskon</th>
                 <th>Total</th>
                 <th>Status</th>
                 {{-- <th>Created At</th> --}}
-                <th width="9%">Action</th>
+                <th width="9%">Aksi</th>
             </tr>
         </thead>
         <tbody>

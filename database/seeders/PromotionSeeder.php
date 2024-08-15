@@ -18,7 +18,7 @@ class PromotionSeeder extends Seeder
         $promotions = [
             [
                 'code' => 'AZZAHRA2024',
-                'name' => '30% off on all products',
+                'name' => 'Diskon 30% untuk setiap produk di sini.',
                 'type' => 'PERCENT',
                 'discount' => 30,
                 'created_at' => $now,

@@ -11,15 +11,16 @@
     <!-- Content Row -->
     <div class="row">
 
-        <x-admin.dashboard-card title="Users" value="{{ $totalUsers }}" icon="fas fa-users" />
-        <x-admin.dashboard-card title="Products" value="{{ $totalEvents }}" icon="fas fa-calendar" />
-        <x-admin.dashboard-card title="Promotions" value="{{ $totalPromotions }}" icon="fas fa-tags" />
-        <x-admin.dashboard-card title="Transactions" value="{{ $totalTransactions }}" icon="fas fa-exchange-alt" />
+        <x-admin.dashboard-card title="User" value="{{ $totalUsers }}" icon="fas fa-users" />
+        <x-admin.dashboard-card title="Produk" value="{{ $totalEvents }}" icon="fas fa-calendar" />
+        <x-admin.dashboard-card title="Kode Promosi" value="{{ $totalPromotions }}" icon="fas fa-tags" />
+        <x-admin.dashboard-card title="Transaksi" value="{{ $totalTransactions }}" icon="fas fa-exchange-alt" />
 
-        <x-admin.dashboard-card title="Gross Sales" value="Rp. {{ number_format($grossSales, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
-        <x-admin.dashboard-card title="Discounts" value="Rp. {{ number_format($discounts, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
-        <x-admin.dashboard-card title="Net Sales" value="Rp. {{ number_format($netSales, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
-        <x-admin.dashboard-card title="Average" value="Rp. {{ number_format($average, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
+        <x-admin.dashboard-card title="Penjualan Bruto" value="Rp. {{ number_format($grossSales, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
+        <x-admin.dashboard-card title="Diskon" value="Rp. {{ number_format($discounts, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
+        <x-admin.dashboard-card title="Penjualan Neto" value="Rp. {{ number_format($netSales, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
+        <x-admin.dashboard-card title="Rata-Rata" value="Rp. {{ number_format($average, 0, ',', '.') }},-" icon="fas fa-dollar-sign" />
+
 
         <x-admin.dashboard-chart />
 

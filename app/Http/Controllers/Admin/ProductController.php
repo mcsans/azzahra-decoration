@@ -53,12 +53,12 @@ class ProductController extends Controller
                 Product::create($validated);
             });
 
-            return redirect()->route('admin.master-data.products.index')->with('success', 'Data created successfully.');
+            return redirect()->route('admin.master-data.products.index')->with('success', 'Data produk berhasil dibuat.');
         } catch (\Exception $e) {
 
             Log::error('Failed to create data: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.products.index')->with('error', 'Failed to create data.');
+            return redirect()->route('admin.master-data.products.index')->with('error', 'Gagal membuat data produk.');
         }
     }
 
@@ -108,12 +108,12 @@ class ProductController extends Controller
                 Product::where('id', $product->id)->update($validated);
             });
 
-            return redirect()->route('admin.master-data.products.index')->with('success', 'Data updated successfully.');
+            return redirect()->route('admin.master-data.products.index')->with('success', 'Data produk berhasil diperbarui.');
         } catch (\Exception $e) {
 
             Log::error('Failed to update data: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.products.index')->with('error', 'Failed to update data.');
+            return redirect()->route('admin.master-data.products.index')->with('error', 'Gagal memperbarui data produk.');
         }
     }
 
@@ -124,6 +124,6 @@ class ProductController extends Controller
     {
         $product->delete();
 
-        return redirect()->route('admin.master-data.products.index')->with('success', 'Data deleted successfully.');
+        return redirect()->route('admin.master-data.products.index')->with('success', 'Data produk berhasil dihapus.');
     }
 }

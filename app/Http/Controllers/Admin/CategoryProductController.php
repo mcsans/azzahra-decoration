@@ -52,12 +52,12 @@ class CategoryProductController extends Controller
                 CategoryProduct::create($validated);
             });
 
-            return redirect()->route('admin.master-data.category-products.index')->with('success', 'Data created successfully.');
+            return redirect()->route('admin.master-data.category-products.index')->with('success', 'Kategori produk berhasil dibuat.');
         } catch (\Exception $e) {
 
             Log::error('Failed to create data: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.category-products.index')->with('error', 'Failed to create data.');
+            return redirect()->route('admin.master-data.category-products.index')->with('error', 'Gagal membuat kategori produk.');
         }
 
         return view('admin.category-products.index');
@@ -105,12 +105,12 @@ class CategoryProductController extends Controller
                 CategoryProduct::where('id', $categoryProduct->id)->update($validated);
             });
 
-            return redirect()->route('admin.master-data.category-products.index')->with('success', 'Data updated successfully.');
+            return redirect()->route('admin.master-data.category-products.index')->with('success', 'Kategori produk berhasil diperbarui.');
         } catch (\Exception $e) {
 
             Log::error('Failed to update data: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.category-products.index')->with('error', 'Failed to update data.');
+            return redirect()->route('admin.master-data.category-products.index')->with('error', 'Gagal memperbarui kategori produk.');
         }
 
         return view('admin.category-products.index');
@@ -123,6 +123,6 @@ class CategoryProductController extends Controller
     {
         $categoryProduct->delete();
 
-        return redirect()->route('admin.master-data.category-products.index')->with('success', 'Data deleted successfully.');
+        return redirect()->route('admin.master-data.category-products.index')->with('success', 'Kategori produk berhasil dihapus.');
     }
 }

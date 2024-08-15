@@ -45,12 +45,12 @@ class UserController extends Controller
                 User::create($validated);
             });
 
-            return redirect()->route('admin.master-data.users.index')->with('success', 'User created successfully.');
+            return redirect()->route('admin.master-data.users.index')->with('success', 'User berhasil dibuat.');
         } catch (\Exception $e) {
 
             Log::error('Failed to create user: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.users.index')->with('error', 'Failed to create user.');
+            return redirect()->route('admin.master-data.users.index')->with('error', 'Gagal membuat user.');
         }
     }
 
@@ -83,12 +83,12 @@ class UserController extends Controller
                 User::where('id', $user->id)->update($validated);
             });
 
-            return redirect()->route('admin.master-data.users.index')->with('success', 'User updated successfully.');
+            return redirect()->route('admin.master-data.users.index')->with('success', 'User berhasil diperbarui.');
         } catch (\Exception $e) {
 
             Log::error('Failed to update user: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.users.index')->with('error', 'Failed to update user.');
+            return redirect()->route('admin.master-data.users.index')->with('error', 'Gagal memperbarui user.');
         }
     }
 
@@ -96,6 +96,6 @@ class UserController extends Controller
     {
         $user->delete();
 
-        return redirect()->route('admin.master-data.users.index')->with('success', 'User deleted successfully.');
+        return redirect()->route('admin.master-data.users.index')->with('success', 'User berhasil dihapus.');
     }
 }

@@ -47,12 +47,12 @@ class PromotionController extends Controller
                 Promotion::create($validated);
             });
 
-            return redirect()->route('admin.master-data.promotions.index')->with('success', 'Data created successfully.');
+            return redirect()->route('admin.master-data.promotions.index')->with('success', 'Data promosi berhasil dibuat.');
         } catch (\Exception $e) {
 
             Log::error('Failed to create data: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.promotions.index')->with('error', 'Failed to create data.');
+            return redirect()->route('admin.master-data.promotions.index')->with('error', 'Gagal membuat data promosi.');
         }
 
         return view('admin.promotions.index');
@@ -96,12 +96,12 @@ class PromotionController extends Controller
                 Promotion::where('id', $promotion->id)->update($validated);
             });
 
-            return redirect()->route('admin.master-data.promotions.index')->with('success', 'Data created successfully.');
+            return redirect()->route('admin.master-data.promotions.index')->with('success', 'Data promosi berhasil diperbarui.');
         } catch (\Exception $e) {
 
             Log::error('Failed to create data: ' . $e->getMessage());
 
-            return redirect()->route('admin.master-data.promotions.index')->with('error', 'Failed to create data.');
+            return redirect()->route('admin.master-data.promotions.index')->with('error', 'Gagal memperbarui data promosi.');
         }
 
         return view('admin.promotions.index');
@@ -114,6 +114,6 @@ class PromotionController extends Controller
     {
         $promotion->delete();
 
-        return redirect()->route('admin.master-data.promotions.index')->with('success', 'Data deleted successfully.');
+        return redirect()->route('admin.master-data.promotions.index')->with('success', 'Data promosi berhasil dihapus.');
     }
 }
