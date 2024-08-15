@@ -46,7 +46,7 @@ class DashboardController extends Controller
         $labels = [];
 
         for ($date = $lastWeek; $date->lte($today); $date->addDay()) {
-            $labels[] = $date->format('l, d F Y');
+            $labels[] = $date->formatLocalized('%A, %d %B %Y');
             $dailyTotal = $transactionsLastWeek->where('date', $date->format('Y-m-d'))->sum('total');
             $weeklyRevenue[] = $dailyTotal;
         }
