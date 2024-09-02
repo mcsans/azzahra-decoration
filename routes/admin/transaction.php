@@ -11,4 +11,6 @@ Route::prefix('admin')
         'adminPage',
     ])->group(function () {
         Route::resource('transactions', TransactionController::class)->names('admin.transactions');
+
+        Route::get('transactions/{transaction}/confirm', [TransactionController::class, 'confirm'])->name('admin.transactions.confirm');
     });

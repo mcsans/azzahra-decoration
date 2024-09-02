@@ -38,6 +38,10 @@
                     {{-- <td>{{ Carbon::parse($transaction->created_at)->format('l, d/m/Y h:i A') }}</td> --}}
                     <td align="center">
                         <a href="{{ route('admin.transactions.show', $transaction->id) }}" class="btn btn-sm btn-info btn-tooltip" data-toggle="tooltip" data-placement="left" title="Detail"><i class="fas fa-eye"></i></a>
+
+                        @if (!$transaction->is_done)
+                            <a href="{{ route('admin.transactions.confirm', $transaction->id) }}" class="btn btn-sm btn-success btn-tooltip" data-toggle="tooltip" data-placement="left" title="Konfirmasi Pengembalian" onclick="return confirm('Konfirmasi Pengembalian?')"><i class="fas fa-check"></i></a>
+                        @endif
                     </td>
                 </tr>
             @endforeach
