@@ -30,8 +30,8 @@
         </span>
         <div id="collapseTwo" class="collapse {{ request()->routeIs('admin.master-data.*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Master Data:</h6>
-                <a class="collapse-item {{ request()->routeIs('admin.master-data.users.*') ? 'active' : '' }}" href="{{ route('admin.master-data.users.index') }}">User</a>
+                <h6 class="collapse-header">Data Utama:</h6>
+                <a class="collapse-item {{ request()->routeIs('admin.master-data.users.*') ? 'active' : '' }}" href="{{ route('admin.master-data.users.index') }}">Pengguna</a>
                 <a class="collapse-item {{ request()->routeIs('admin.master-data.category-products.*') ? 'active' : '' }}" href="{{ route('admin.master-data.category-products.index') }}">Kategori Produk</a>
                 <a class="collapse-item {{ request()->routeIs('admin.master-data.products.*') ? 'active' : '' }}" href="{{ route('admin.master-data.products.index') }}">Produk</a>
                 <a class="collapse-item {{ request()->routeIs('admin.master-data.promotions.*') ? 'active' : '' }}" href="{{ route('admin.master-data.promotions.index') }}">Kode Promosi</a>
